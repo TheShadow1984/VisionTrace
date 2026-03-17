@@ -1,2 +1,2 @@
 # eyeofgod
-Python Program that fetches IP Cams from Shodan and searches for people/things 
+Python Program that fetches IP Cams from InternetDB API and searches for people/things 
