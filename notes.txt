@@ -1,4 +1,4 @@
 OpenAIS for ships
 ACLED (Armed Conflict Location & Event Data Project) for live Conflict infos with coordinates, date and conflict type.
 
-Fastapi für Weboberfläche und für asynchrone API Abfragen anstatt requests
+Fastapi für Weboberfläche und für asynchrone API Abfragen httpx anstatt requests
