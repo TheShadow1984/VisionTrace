@@ -1,0 +1,2 @@
+OpenAIS for ships
+ACLED (Armed Conflict Location & Event Data Project) for live Conflict infos with coordinates, date and conflict type.
