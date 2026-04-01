@@ -24,3 +24,4 @@ for i in planes["states"][:10]:
         ).add_to(m)
     except Exception:
         continue
+m.save("index.html")
