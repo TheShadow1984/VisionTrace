@@ -8,7 +8,7 @@ m = folium.Map(location=(0, 0), zoom_start=2, tiles="CartoDB Dark_Matter")
 
 planes = requests.get(url).json()
 
-for i in planes["states"][:10]:
+for i in planes["states"][:100]:
     try:
         folium.Marker(
             location=[i[6], i[5]],
