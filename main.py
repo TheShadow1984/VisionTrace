@@ -1,8 +1,10 @@
 import requests
 import folium
+import time as t
 
 
 url = "https://opensky-network.org/api/states/all"
+m = folium.Map(location=(0, 0), zoom_start=2, tiles="CartoDB Dark_Matter")
 
 planes = requests.get(url).json()
 
@@ -13,8 +15,12 @@ for i in planes["states"][:10]:
     lat = i[6]
     long = i[5]
     alt = i[7]
-    print(f"Plane {icao24} {callsign} from {country} at {lat}, {long}, {alt}")
-
-m = folium.Map(location=(52.5641, 20.8829))
-
-#m.save("location.html")
+    try:
+        folium.Marker(
+            location=[lat, long],
+            tooltip=callsign ,
+            popup=f"icao24: {icao24}, country: {country}, altitude: {alt}",
+            icon=folium.Icon(icon="plane", prefix="fa", color="blue"),
+        ).add_to(m)
+    except Exception:
+        continue

@@ -6,7 +6,8 @@ In Proceedings of the 13th IEEE/ACM International Symposium on Information Proce
 
 The OpenSky Network, https://opensky-network.org
 
-This project uses Folium, which by default loads map tiles from OpenStreetMap.
+This project uses Folium with tiles from [CartoDB](https://carto.com/).
 
-- OpenStreetMap data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
+- Tiles: CartoDB Dark Matter
+- Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 - License: [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/)
