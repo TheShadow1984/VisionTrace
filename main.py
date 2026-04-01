@@ -1,6 +1,5 @@
 import requests
 import folium
-import time as t
 
 
 url = "https://opensky-network.org/api/states/all"
@@ -13,7 +12,7 @@ for i in planes["states"][:100]:
         folium.Marker(
             location=[i[6], i[5]],
             tooltip=i[1] or "N/A",
-            popup=f"icao24: {i[0]}, Country: {i[2]}, Altitude: {i[7]}",
+            popup=f"ID: {i[0]}, Callsign: {i[1]}, Country: {i[2]}, Altitude: {i[7]}",
             icon=folium.Icon(icon="plane", prefix="fa", color="blue"),
         ).add_to(m)
     except Exception:
