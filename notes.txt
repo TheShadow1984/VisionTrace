@@ -2,3 +2,5 @@ OpenAIS for ships
 ACLED (Armed Conflict Location & Event Data Project) for live Conflict infos with coordinates, date and conflict type.
 
 asynchrone API Abfragen httpx anstatt requests
+
+NASA API hinzufügen für alle möglichen Daten
