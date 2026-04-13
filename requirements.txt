@@ -1,3 +1,4 @@
-requests
-folium
-"fastapi[standard]"
+httpx
+fastapi
+uv
+uvicorn
