@@ -3,3 +3,5 @@ OpenAIS for ships
 ACLED (Armed Conflict Location & Event Data Project) for live Conflict infos with coordinates, date and conflict type.
 
 NASA API hinzufügen für alle möglichen Daten
+
+Vllt GTD (Global Terrorism Database)
