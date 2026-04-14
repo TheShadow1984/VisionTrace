@@ -5,8 +5,8 @@ app = FastAPI()
 
 async def fetch_api(url):
     async with httpx.AsyncClient() as client:
-        response = await client.get(url)
-        return response.json()
+        response = await client.get(url).json()
+        return response
 
 @app.get("/flights")
 async def planes():
