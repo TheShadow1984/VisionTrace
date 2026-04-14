@@ -14,4 +14,12 @@ async def planes():
 
 @app.get("/acled")
 async def acleds():
-    return await fetch_api("google.com")
+    pass
+
+@app.get("/nasa")
+async def nasa():
+    pass
+
+@app.get("/gtd")
+async def gtd():
+    pass
